@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<root>
+    <devicevendordef>
+        <vendorname>Microsoft</vendorname>
+        <vendorid>0x045e</vendorid>
+    </devicevendordef>
+    <deviceproductdef>
+        <productname>Microsoft_Sculpt_Comfort_Mouse</productname>
+        <productid>0x07a2</productid>
+    </deviceproductdef>
+
+    <item>
+        <name>Microsoft Sculpt Comfort Mouse</name>
+        <appendix>Device specification: https://www.microsoft.com/accessories/en-us/products/mice/sculpt-comfort-mouse/h3s-00003</appendix>
+        <appendix>https://github.com/Jamesits/james-karabiner-config/blob/master/dell_tp713_wireless_trackpad.xml</appendix>
+        <appendix>Maintained by James Swineson ( https://github.com/Jamesits )</appendix>
+        <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
+
+        <item>
+            <name>Windows Key</name>
+            <item>
+                <name style="important">Important:</name>
+                <appendix>Items are exclusive. Choose one item.</appendix>
+            </item>
+            <item>
+                <identifier>me.swineson.karabiner.ms.comfortmouse.windows.launchpad</identifier>
+                <name>Show Launchpad</name>
+                <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
+                <autogen>
+                    __KeyToKey__ KeyCode::COMMAND_L, ModifierFlag::COMMAND_L, KeyCode::LAUNCHPAD, Option::NOREPEAT
+                </autogen>
+            </item>
+            <item>
+                <identifier>me.swineson.karabiner.ms.comfortmouse.windows.dashboard</identifier>
+                <name>Show Dashboard</name>
+                <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
+                <autogen>
+                    __KeyToKey__ KeyCode::COMMAND_L, ModifierFlag::COMMAND_L, KeyCode::DASHBOARD, Option::NOREPEAT
+                </autogen>
+            </item>
+            <item>
+                <identifier>me.swineson.karabiner.ms.comfortmouse.windows.missioncontrol</identifier>
+                <name>Show Mission Control</name>
+                <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
+                <autogen>
+                    __KeyToKey__ KeyCode::COMMAND_L, ModifierFlag::COMMAND_L, KeyCode::MISSION_CONTROL, Option::NOREPEAT
+                </autogen>
+            </item>
+            <item>
+                <identifier>me.swineson.karabiner.ms.comfortmouse.windows.expose</identifier>
+                <name>Show Exposé</name>
+                <appendix>Required shortcut settings:</appendix>
+                <appendix>Mission Control -> Application Windows - ^↓</appendix>
+                <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
+                <autogen>
+                    __KeyToKey__ KeyCode::COMMAND_L, ModifierFlag::COMMAND_L, KeyCode::CURSOR_DOWN, ModifierFlag::CONTROL_L, Option::NOREPEAT
+                </autogen>
+            </item>
+        </item>
+    </item>
+</root>
