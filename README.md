@@ -4,6 +4,8 @@ Prebuilt, device-specific Karabiner config files to enable every button on your 
 
 ## Quick Installation
 
+Paste the following line in a terminal and press enter.
+
 ```shell
 cd ~/Library/Application\ Support/Karabiner/ && git clone https://github.com/Jamesits/james-karabiner-config.git
 ```
@@ -17,7 +19,7 @@ Then edit `~/Library/Application\ Support/Karabiner/private.xml` to be like this
 </root>
 ```
 
-Finally, open Karabiner preference and click the "Reload XML" button under "Change Key" tab.
+Finally, open Karabiner preference and click the "Reload XML" button under "Change Key" tab. Some new options will show up on the top of the list. 
 
 ## Update
 
