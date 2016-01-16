@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<root>
+    <item>
+        <name>──────────────────────────────</name>
+        <appendix>James' Karabiner Device Config Collection</appendix>
+        <appendix>by James Swineson</appendix>
+        <appendix>Visit https://github.com/Jamesits/james-karabiner-config for more information.</appendix>
+    </item>
+    <include once="true" path="dell_tp713_wireless_trackpad.xml"/>
+    <item>
+        <name>──────────────────────────────</name>
+    </item>
+</root>
