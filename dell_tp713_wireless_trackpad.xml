@@ -42,6 +42,7 @@
 
         <item>
             <name>Reverse scrolling (Natural Scrolling)</name>
+            <appendix>Note: It ignores system preference.</appendix>
             <item>
                 <name style="important">Important:</name>
                 <appendix>Items are exclusive. Choose one item.</appendix>
@@ -167,12 +168,10 @@
             </item>
             <item>
                 <name>Up -> Dashboard</name>
-                <appendix>Required shortcut settings:</appendix>
-                <appendix>Mission Control -> Show Dashboard - F12</appendix>
                 <identifier>me.swineson.karabiner.tp713.3finger.up_down.up2dashboard</identifier>
                 <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
                 <autogen>
-                    __KeyToKey__ KeyCode::COMMAND_L, ModifierFlag::SHIFT_L, KeyCode::F12, Option::NOREPEAT
+                    __KeyToKey__ KeyCode::COMMAND_L, ModifierFlag::SHIFT_L, KeyCode::DASHBOARD, Option::NOREPEAT
                 </autogen>
             </item>
             <item>
@@ -222,12 +221,10 @@
             </item>
             <item>
                 <name>Down -> Dashboard</name>
-                <appendix>Required shortcut settings:</appendix>
-                <appendix>Mission Control -> Show Dashboard - F12</appendix>
                 <identifier>me.swineson.karabiner.tp713.3finger.up_down.down2dashboard</identifier>
                 <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
                 <autogen>
-                    __KeyToKey__ KeyCode::COMMAND_L, ModifierFlag::COMMAND_L, KeyCode::F12, Option::NOREPEAT
+                    __KeyToKey__ KeyCode::COMMAND_L, ModifierFlag::COMMAND_L, KeyCode::DASHBOARD, Option::NOREPEAT
                 </autogen>
             </item>
             <item>
