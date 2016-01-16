@@ -139,8 +139,6 @@
             </item>
             <item>
                 <name>Up -> Mission Control</name>
-                <appendix>Required shortcut settings:</appendix>
-                <appendix>Mission Control -> Mission Control - ^↑</appendix>
                 <identifier>me.swineson.karabiner.tp713.3finger.up_down.up2missioncontrol</identifier>
                 <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
                 <autogen>
@@ -195,8 +193,6 @@
             </item>
             <item>
                 <name>Down -> Mission Control</name>
-                <appendix>Required shortcut settings:</appendix>
-                <appendix>Mission Control -> Mission Control - ^↑</appendix>
                 <identifier>me.swineson.karabiner.tp713.3finger.up_down.down2missioncontrol</identifier>
                 <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
                 <autogen>
