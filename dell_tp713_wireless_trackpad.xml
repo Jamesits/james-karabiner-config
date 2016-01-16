@@ -33,13 +33,16 @@
         </item>
 
         <item>
-            <name>2 finger expand</name>
+            <name>2 finger pinch</name>
+            <appendix>Not Implemented Currently</appendix>
+            <!--
             <item>
                 <identifier>me.swineson.karabiner.tp713.2fingerexpand.toscroll</identifier>
                 <appendix>Disable zoom by 2 fingers</appendix>
                 <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
                 <autogen>__PointingRelativeToScroll__ ModifierFlag::CONTROL_L</autogen>
             </item>
+        -->
         </item>
 
         <item>
