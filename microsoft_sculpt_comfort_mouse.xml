@@ -17,6 +17,39 @@
         <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
 
         <item>
+            <name>Reverse scrolling (Natural Scrolling)</name>
+            <appendix>Note: It follows system preference by default.</appendix>
+            <item>
+                <name style="important">Important:</name>
+                <appendix>Items are exclusive. Choose one item.</appendix>
+            </item>
+            <item>
+                <name>Reverse Vertical &amp; Horizontal Scrolling</name>
+                <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
+                <identifier>me.swineson.karabiner.ms.comfortmouse.scroll.flip.bothdirection</identifier>
+                <autogen>
+                    __FlipScrollWheel__ Option::FLIPSCROLLWHEEL_HORIZONTAL, Option::FLIPSCROLLWHEEL_VERTICAL,
+                </autogen>
+            </item>
+            <item>
+                <identifier>me.swineson.karabiner.ms.comfortmouse.scroll.flip.horizonal</identifier>
+                <name>Reverse Horizontal Scrolling</name>
+                <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
+                <autogen>
+                    __FlipScrollWheel__ Option::FLIPSCROLLWHEEL_HORIZONTAL,
+                </autogen>
+            </item>
+            <item>
+                <identifier>me.swineson.karabiner.ms.comfortmouse.scroll.flip.vertical</identifier>
+                <name>Reverse Vertical Scrolling</name>
+                <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
+                <autogen>
+                    __FlipScrollWheel__ Option::FLIPSCROLLWHEEL_VERTICAL,
+                </autogen>
+            </item>
+        </item>
+
+        <item>
             <name>Windows Key</name>
             <item>
                 <name style="important">Important:</name>
@@ -27,7 +60,7 @@
                 <name>Show Launchpad</name>
                 <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
                 <autogen>
-                    __KeyToKey__ KeyCode::COMMAND_L, ModifierFlag::COMMAND_L, KeyCode::LAUNCHPAD, Option::NOREPEAT
+                    __KeyToKey__ KeyCode::COMMAND_L, ModifierFlag::COMMAND_L | ModifierFlag::NONE, KeyCode::LAUNCHPAD, Option::NOREPEAT
                 </autogen>
             </item>
             <item>
@@ -35,7 +68,7 @@
                 <name>Show Dashboard</name>
                 <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
                 <autogen>
-                    __KeyToKey__ KeyCode::COMMAND_L, ModifierFlag::COMMAND_L, KeyCode::DASHBOARD, Option::NOREPEAT
+                    __KeyToKey__ KeyCode::COMMAND_L, ModifierFlag::COMMAND_L | ModifierFlag::NONE, KeyCode::DASHBOARD, Option::NOREPEAT
                 </autogen>
             </item>
             <item>
@@ -43,7 +76,7 @@
                 <name>Show Mission Control</name>
                 <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
                 <autogen>
-                    __KeyToKey__ KeyCode::COMMAND_L, ModifierFlag::COMMAND_L, KeyCode::MISSION_CONTROL, Option::NOREPEAT
+                    __KeyToKey__ KeyCode::COMMAND_L, ModifierFlag::COMMAND_L | ModifierFlag::NONE, KeyCode::MISSION_CONTROL, Option::NOREPEAT
                 </autogen>
             </item>
             <item>
@@ -53,9 +86,83 @@
                 <appendix>Mission Control -> Application Windows - ^↓</appendix>
                 <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
                 <autogen>
-                    __KeyToKey__ KeyCode::COMMAND_L, ModifierFlag::COMMAND_L, KeyCode::CURSOR_DOWN, ModifierFlag::CONTROL_L, Option::NOREPEAT
+                    __KeyToKey__ KeyCode::COMMAND_L, ModifierFlag::COMMAND_L | ModifierFlag::NONE, KeyCode::CURSOR_DOWN, ModifierFlag::CONTROL_L, Option::NOREPEAT
+                </autogen>
+            </item>
+            <item>
+                <identifier>me.swineson.karabiner.ms.comfortmouse.windows.desktop</identifier>
+                <name>Show Desktop</name>
+                <appendix>Required shortcut settings:</appendix>
+                <appendix>Mission Control -> Show Desktop - F11</appendix>
+                <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
+                <autogen>
+                    __KeyToKey__ KeyCode::COMMAND_L, ModifierFlag::COMMAND_L | ModifierFlag::NONE, KeyCode::F11, Option::NOREPEAT
                 </autogen>
             </item>
         </item>
+
+        <item>
+            <name>Windows key swipe up / down</name>
+            <item>
+                <name style="important">Important:</name>
+                <appendix>Items are exclusive. Choose one item.</appendix>
+            </item>
+
+            <item>
+                <name>Down -> Forward, Up -> Back [Natural Scrolling]</name>
+                <identifier>me.swineson.karabiner.ms.comfortmouse.swipeupdown.forward_back</identifier>
+                <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
+                <autogen>
+                    __KeyToKey__ KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::NONE, Option::NOREPEAT
+                </autogen>
+                <autogen>
+                    __KeyToKey__ KeyCode::DELETE, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::NONE, Option::NOREPEAT
+                </autogen>
+            </item>
+
+            <item>
+                <name>Down -> Back, Up -> Forward</name>
+                <identifier>me.swineson.karabiner.ms.comfortmouse.swipeupdown.back_forward</identifier>
+                <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
+                <autogen>
+                    __KeyToKey__ KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L, Option::NOREPEAT
+                </autogen>
+                <autogen>
+                    __KeyToKey__ KeyCode::DELETE, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L, Option::NOREPEAT
+                </autogen>
+            </item>
+
+            <item>
+                <name>Down -> Next Desktop, Up -> Previous Desktop [Natural Scrolling]</name>
+                <appendix>Required shortcut settings:</appendix>
+                <appendix>Mission Control -> Move left a space - ^←</appendix>
+                <appendix>Mission Control -> Move right a space - ^→</appendix>
+                <identifier>me.swineson.karabiner.ms.comfortmouse.swipeupdown.desktoplr</identifier>
+                <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
+                <autogen>
+                    __KeyToKey__ KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L, KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L, Option::NOREPEAT
+                </autogen>
+                <autogen>
+                    __KeyToKey__ KeyCode::DELETE, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L, KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L, Option::NOREPEAT
+                </autogen>
+            </item>
+
+            <item>
+                <name>Down -> Previous Desktop, Up -> Next Disktop</name>
+                <appendix>Required shortcut settings:</appendix>
+                <appendix>Mission Control -> Move left a space - ^←</appendix>
+                <appendix>Mission Control -> Move right a space - ^→</appendix>
+                <identifier>me.swineson.karabiner.ms.comfortmouse.swipeupdown.desktoprl</identifier>
+                <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
+                <autogen>
+                    __KeyToKey__ KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L, KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L, Option::NOREPEAT
+                </autogen>
+                <autogen>
+                    __KeyToKey__ KeyCode::DELETE, ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L, KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L, Option::NOREPEAT
+                </autogen>
+            </item>
+
+        </item>
+
     </item>
 </root>
