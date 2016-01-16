@@ -4,7 +4,7 @@ Prebuilt, device-specific Karabiner config files to enable every button on your 
 
 ## Prerequisite
 
-Download and install Karabiner from [Here](https://pqrs.org/osx/karabiner/).
+Download and install Karabiner from [here](https://pqrs.org/osx/karabiner/).
 
 ## Quick Installation
 
