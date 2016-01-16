@@ -66,6 +66,29 @@
                     __KeyToKey__ PointingButton::BUTTON5, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L, Option::NOREPEAT
                 </autogen>
             </item>
+
+            <item>
+                <name>Left -> Left Desktop, Right -> Right Desktop [Natural Scrolling]</name>
+                <identifier>me.swineson.karabiner.tp713.3finger.left_right.desktoplr</identifier>
+                <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
+                <autogen>
+                    __KeyToKey__ PointingButton::BUTTON4, KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L, Option::NOREPEAT
+                </autogen>
+                <autogen>
+                    __KeyToKey__ PointingButton::BUTTON5, KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L, Option::NOREPEAT
+                </autogen>
+            </item>
+            <item>
+                <name>Left -> Right Desktop, Right -> Left Disktop</name>
+                <identifier>me.swineson.karabiner.tp713.3finger.left_right.desktoprl</identifier>
+                <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
+                <autogen>
+                    __KeyToKey__ PointingButton::BUTTON4, KeyCode::CURSOR_LEFT, ModifierFlag::CONTROL_L, Option::NOREPEAT
+                </autogen>
+                <autogen>
+                    __KeyToKey__ PointingButton::BUTTON5, KeyCode::CURSOR_RIGHT, ModifierFlag::CONTROL_L, Option::NOREPEAT
+                </autogen>
+            </item>
         </item>
 
         <item>
