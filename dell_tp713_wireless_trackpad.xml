@@ -17,6 +17,7 @@
             <item>
                 <identifier>me.swineson.karabiner.tp713.scroll.flip.horizonal</identifier>
                 <name>Flip Horizontal ScrollWheel [Natural Scrolling]</name>
+                <appendix>Note: this may not work on certain occasions!</appendix>
                 <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
                 <autogen>
                     __FlipScrollWheel__ Option::FLIPSCROLLWHEEL_HORIZONTAL,
