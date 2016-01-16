@@ -72,7 +72,7 @@
             </item>
 
             <item>
-                <name>Left -> Left Desktop, Right -> Right Desktop [Natural Scrolling]</name>
+                <name>Left -> Next Desktop, Right -> Previous Desktop [Natural Scrolling]</name>
                 <appendix>Required shortcut settings:</appendix>
                 <appendix>Mission Control -> Move left a space - ^←</appendix>
                 <appendix>Mission Control -> Move right a space - ^→</appendix>
@@ -86,7 +86,7 @@
                 </autogen>
             </item>
             <item>
-                <name>Left -> Right Desktop, Right -> Left Disktop</name>
+                <name>Left -> Previous Desktop, Right -> Next Disktop</name>
                 <appendix>Required shortcut settings:</appendix>
                 <appendix>Mission Control -> Move left a space - ^←</appendix>
                 <appendix>Mission Control -> Move right a space - ^→</appendix>
