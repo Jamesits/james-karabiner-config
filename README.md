@@ -1,6 +1,10 @@
 # James' Karabiner Config Files Collection
 
-Prebuilt, device-specific Karabiner config files to enable every button on your mouse, touchpad or keyboard.
+Prebuilt, device-specific Karabiner config files to enable every button on your mouse, touchpad or keyboard on OS X, even when no driver available.
+
+## Prerequisite
+
+Download and install Karabiner from [Here](https://pqrs.org/osx/karabiner/).
 
 ## Quick Installation
 
@@ -19,7 +23,7 @@ Then edit `~/Library/Application\ Support/Karabiner/private.xml` to be like this
 </root>
 ```
 
-Finally, open Karabiner preference and click the "Reload XML" button under "Change Key" tab. Some new options will show up on the top of the list. 
+Finally, open Karabiner preference and click the "Reload XML" button under "Change Key" tab. Some new options will show up on the top of the list.
 
 ## Update
 
