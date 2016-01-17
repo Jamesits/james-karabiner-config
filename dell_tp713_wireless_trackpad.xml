@@ -72,6 +72,37 @@
         </item>
 
         <item>
+            <name>2 finger swipe left / right</name>
+            <appendix>By default they will perform horizontal scrolling.</appendix>
+            <item>
+                <name style="important">Important:</name>
+                <appendix>Items are exclusive. Choose one item.</appendix>
+            </item>
+
+            <item>
+                <identifier>me.swineson.karabiner.tp713.2finger.leftright.forwardback</identifier>
+                <name>Left -> Forward, Right -> Back [Natural Scrolling]</name>
+                <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
+                <autogen>__ScrollWheelToKey__ ScrollWheel::LEFT, ModifierFlag::NONE, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L, Option::NOREPEAT</autogen>
+                <autogen>__ScrollWheelToKey__ ScrollWheel::RIGHT, ModifierFlag::NONE, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L, Option::NOREPEAT</autogen>
+                <autogen>__IgnoreMultipleSameKeyPress__ KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::NONE</autogen>
+                <autogen>__IgnoreMultipleSameKeyPress__ KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::NONE</autogen>
+            </item>
+
+
+            <item>
+                <identifier>me.swineson.karabiner.tp713.2finger.leftright.backforward</identifier>
+                <name>Left -> Back, Right -> Forward</name>
+                <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
+                <autogen>__ScrollWheelToKey__ ScrollWheel::LEFT, ModifierFlag::NONE, KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L, Option::NOREPEAT</autogen>
+                <autogen>__ScrollWheelToKey__ ScrollWheel::RIGHT, ModifierFlag::NONE, KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L, Option::NOREPEAT</autogen>
+                <autogen>__IgnoreMultipleSameKeyPress__ KeyCode::CURSOR_LEFT, ModifierFlag::COMMAND_L | ModifierFlag::NONE</autogen>
+                <autogen>__IgnoreMultipleSameKeyPress__ KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L | ModifierFlag::NONE</autogen>
+            </item>
+
+        </item>
+
+        <item>
             <name>Reverse scrolling (Natural Scrolling)</name>
             <appendix>Note: It ignores system preference.</appendix>
             <item>
