@@ -23,9 +23,17 @@
                 <appendix>Items are exclusive. Choose one item.</appendix>
             </item>
             <item>
+                <identifier>me.swineson.karabiner.tp713.2finger.disablepinch.ignore</identifier>
+                <name>Disable pinch</name>
+                <appendix>Pinch will be completely ignored.</appendix>
+                <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
+                <autogen>__DropScrollWheel__ ModifierFlag::CONTROL_L | ModifierFlag::NONE</autogen>
+            </item>
+
+            <item>
                 <identifier>me.swineson.karabiner.tp713.2finger.disablepinch.standard</identifier>
                 <name>Disable pinch</name>
-                <appendix>Pinch will be treated as vertical scroll. </appendix>
+                <appendix>Pinch will be treated as vertical scroll.</appendix>
                 <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
                 <autogen>__StripModifierFromScrollWheel__ ModifierFlag::CONTROL_L | ModifierFlag::NONE</autogen>
             </item>
@@ -50,6 +58,7 @@
             <item>
                 <identifier>me.swineson.karabiner.tp713.2finger.disablerotate</identifier>
                 <name>Disable rotate</name>
+                <appendix>Rotate will be completely ignored.</appendix>
                 <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
                 <autogen>__DropKeyAfterRemap__ KeyCode::COMMA, ModifierFlag::CONTROL_L | ModifierFlag::NONE</autogen>
                 <autogen>__DropKeyAfterRemap__ KeyCode::DOT, ModifierFlag::CONTROL_L | ModifierFlag::NONE</autogen>
@@ -201,7 +210,8 @@
             </item>
             <item>
                 <name>Up -> Middle Key</name>
-                <appendix>Note: Middle key can be activated by pressing left and right bottom corner at the same time by default. </appendix>
+                <appendix>Note: Middle key can be activated by pressing left and right bottom corner at the same time by default.
+                </appendix>
                 <identifier>me.swineson.karabiner.tp713.3finger.up_down.up2middlekey</identifier>
                 <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
                 <autogen>
@@ -254,7 +264,8 @@
             </item>
             <item>
                 <name>Down -> Middle Key</name>
-                <appendix>Note: Middle key can be activated by pressing left and right bottom corner at the same time by default. </appendix>
+                <appendix>Note: Middle key can be activated by pressing left and right bottom corner at the same time by default.
+                </appendix>
                 <identifier>me.swineson.karabiner.tp713.3finger.up_down.down2middlekey</identifier>
                 <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
                 <autogen>
