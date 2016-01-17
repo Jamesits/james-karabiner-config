@@ -11,9 +11,6 @@
 
     <item>
         <name>Dell TP713 Wireless Touchpad</name>
-        <appendix>Device specification: http://www.dell.com/support/home/us/en/04/product-support/product/dell-tp713-wireless-touchpad/research</appendix>
-        <appendix>https://github.com/Jamesits/james-karabiner-config/blob/master/dell_tp713_wireless_trackpad.xml</appendix>
-        <appendix>Maintained by James Swineson ( https://github.com/Jamesits )</appendix>
         <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
 
         <item>
