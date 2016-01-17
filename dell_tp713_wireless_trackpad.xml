@@ -41,6 +41,31 @@
         </item>
 
         <item>
+            <name>2 finger rotate</name>
+            <item>
+                <name style="important">Important:</name>
+                <appendix>Items are exclusive. Choose one item.</appendix>
+            </item>
+
+            <item>
+                <identifier>me.swineson.karabiner.tp713.2finger.disablerotate</identifier>
+                <name>Disable rotate</name>
+                <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
+                <autogen>__DropKeyAfterRemap__ KeyCode::COMMA, ModifierFlag::CONTROL_L | ModifierFlag::NONE</autogen>
+                <autogen>__DropKeyAfterRemap__ KeyCode::DOT, ModifierFlag::CONTROL_L | ModifierFlag::NONE</autogen>
+            </item>
+
+            <item>
+                <identifier>me.swineson.karabiner.tp713.2finger.rotate2rotate</identifier>
+                <name>Enable rotate</name>
+                <device_only>DeviceVendor::Dell, DeviceProduct::Dell_TP713_Wireless_Touchpad</device_only>
+                <autogen>__KeyToKey__ KeyCode::COMMA, ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, Option::NOREPEAT</autogen>
+                <autogen>__KeyToKey__ KeyCode::DOT, ModifierFlag::CONTROL_L | ModifierFlag::NONE, KeyCode::R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, Option::NOREPEAT</autogen>
+            </item>
+
+        </item>
+
+        <item>
             <name>Reverse scrolling (Natural Scrolling)</name>
             <appendix>Note: It ignores system preference.</appendix>
             <item>
