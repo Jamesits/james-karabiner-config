@@ -12,7 +12,7 @@
     <item>
         <name>Microsoft Sculpt Comfort Mouse</name>
         <appendix>Device specification: https://www.microsoft.com/accessories/en-us/products/mice/sculpt-comfort-mouse/h3s-00003</appendix>
-        <appendix>https://github.com/Jamesits/james-karabiner-config/blob/master/dell_tp713_wireless_trackpad.xml</appendix>
+        <appendix>https://github.com/Jamesits/james-karabiner-config/blob/master/microsoft_sculpt_comfort_mouse.xml</appendix>
         <appendix>Maintained by James Swineson ( https://github.com/Jamesits )</appendix>
         <device_only>DeviceVendor::Microsoft, DeviceProduct::Microsoft_Sculpt_Comfort_Mouse</device_only>
 
